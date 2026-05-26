@@ -1,0 +1,202 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #141414 0%, #000000 100%);
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(1px);
+}
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-caption {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease-in-out;
+}
+.active .carousel-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+.PC-container {
+    position: absolute;
+    right: 10px;
+    bottom: -300px;
+}
+.Mades-qpc {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(83, 83, 83);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-item {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.content-wrapper {
+  flex: 1; /* Це змушує блок розтягуватися і займати все вільне місце */
+}
+
+.navbar-custom {
+    background: rgba(10, 10, 10, 0.8) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff !important;
+}
+
+.navbar-brand span {
+    color: #ffffff;
+}
+
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #fff !important;
+}
+
+.btn-contact {
+    border: 1px solid #ffffff !important;
+    border-radius: 5px;
+    color: #ffffff !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-contact:hover {
+    box-shadow: 0 0 15px rgba(155, 155, 155, 0.4);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(15, 15, 15, 0.95);
+        margin-top: 15px;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav-link {
+        margin: 10px 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        min-width: 0;
+    }
+
+    .navbar-custom {
+        padding: 0.65rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 0.92rem;
+        padding: 0.65rem 0 !important;
+    }
+
+    .btn-contact {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 8px;
+        padding: 0.75rem 1rem !important;
+    }
+
+    .carousel-item img {
+        height: 360px;
+    }
+
+    #scrollBtn {
+        width: 48px !important;
+        height: 48px !important;
+        right: 14px !important;
+        bottom: 14px !important;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}

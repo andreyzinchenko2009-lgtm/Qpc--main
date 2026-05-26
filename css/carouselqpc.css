@@ -1,0 +1,19 @@
+#qpcCarousel .carousel-item,
+#qpcCarousel .carousel-item.active,
+#qpcCarousel .carousel-item-next,
+#qpcCarousel .carousel-item-prev,
+#qpcCarousel .carousel-item-start,
+#qpcCarousel .carousel-item-end,
+#qpcCarousel .carousel-caption {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+#qpcCarousel .carousel-inner {
+    overflow: visible;
+}
+
+#qpcCarousel .carousel-item {
+    backface-visibility: hidden;
+}

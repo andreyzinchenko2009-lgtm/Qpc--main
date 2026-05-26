@@ -1,0 +1,384 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 120px;
+}
+
+.Glacier-project {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-family: 'Dela Gothic One', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-align: left !important;
+}
+
+.glacier-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.glacier-options .btn {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: #666666;
+    transition: all 0.2s ease;
+    box-shadow: none !important;
+}
+
+.glacier-options .btn-tab:hover {
+    color: #ffffff;
+}
+
+.glacier-options .btn-tab.active {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.glacier-options .btn-buy {
+    background: #55ccff;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.glacier-options .btn-buy:hover {
+    background: #77ddff;
+    transform: translateY(-1px);
+}
+
+.glacier-options .btn-buy:active {
+    transform: translateY(1px);
+}
+
+.project-content-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.project-card-custom {
+    flex-shrink: 0;
+    max-width: 750px;
+    width: 100%;
+}
+
+.project-gallery-vertical {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.glacier-img-min {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.glacier-img-min .thumb {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+}
+
+.glacier-img-min .thumb:hover {
+    opacity: 0.7;
+}
+
+.glacier-img-min .thumb.active {
+    border-color: #55ccff;
+    opacity: 1;
+}
+
+.main-image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+#main-display {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.glacier-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.glacier-price h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.btn-add-to-cart {
+    background: transparent;
+    color: #55ccff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 12px 26px;
+    border: 1px solid rgba(85, 204, 255, 0.4);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    box-shadow: none !important;
+}
+
+.btn-add-to-cart:hover {
+    background: #55ccff;
+    color: #000000;
+    border-color: #55ccff;
+    box-shadow: 0 0 20px rgba(85, 204, 255, 0.2) !important;
+}
+
+.btn-add-to-cart:active {
+    transform: scale(0.98);
+}
+.glacier-characteristics {
+    margin-top: 30px;
+}
+ul {
+  list-style-type: none; /* Убирает маркеры */
+  padding: 0;            /* Убирает левый отступ списка (по желанию) */
+  margin: 0;             /* Убирает внешние отступы (по желанию) */
+}
+.glacier-extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    gap: 20px;
+    width: 100%;
+}
+.glacier-characteristics li:hover {
+    color: #ffffff;
+}
+.glacier-extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    max-width: 200px;
+    flex-direction: row;
+    white-space: normal; 
+}
+
+.info-item span {
+    line-height: 1.2;
+    flex: 1; 
+}
+/* Миниатюры фото и видео */
+.glacier-img-min .thumb {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+    background-color: #111;
+}
+
+/* Основной блок для фото и видео */
+#main-display-wrapper {
+    width: 100%;
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#main-display-wrapper img.main-img,
+#main-display-wrapper video.main-video {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Активная миниатюра */
+.glacier-img-min video.thumb {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+    background-color: #111;
+
+}
+@media (max-width: 992px) {
+    body {
+        padding-top: 96px;
+    }
+
+    .Glacier-project {
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .project-content-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+    .project-card-custom {
+        max-width: 100%;
+    }
+    .glacier-detail {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 88px;
+    }
+
+    .project-title {
+        font-size: clamp(1.8rem, 12vw, 2.4rem);
+        text-align: center !important;
+        margin-bottom: 24px;
+    }
+
+    .glacier-options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: center;
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+
+    .glacier-options .btn {
+        width: 100%;
+        min-height: 42px;
+        padding: 9px 10px;
+        white-space: normal;
+    }
+
+    .glacier-options .btn-buy {
+        margin-left: 0;
+    }
+
+    .project-gallery-vertical {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .glacier-img-min {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .glacier-img-min .thumb,
+    .glacier-img-min video.thumb {
+        width: 65px;
+        height: 65px;
+        flex: 0 0 auto;
+    }
+
+    .main-image-wrapper,
+    #main-display-wrapper {
+        width: 100%;
+        max-height: none;
+    }
+
+    #main-display,
+    #main-display-wrapper img.main-img,
+    #main-display-wrapper video.main-video,
+    #main-display-img,
+    #main-display-video {
+        max-height: 430px;
+        width: 100% !important;
+        object-fit: contain;
+    }
+
+    .glacier-price h3 {
+        font-size: 1.55rem;
+    }
+
+    .btn-add-to-cart {
+        width: 100%;
+        min-height: 46px;
+    }
+
+    .glacier-extra-info {
+        margin-top: 70px;
+        margin-bottom: 80px;
+        justify-content: flex-start;
+    }
+
+    .info-item {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .glacier-options {
+        grid-template-columns: 1fr;
+    }
+
+    .glacier-img-min .thumb,
+    .glacier-img-min video.thumb {
+        width: 58px;
+        height: 58px;
+    }
+}

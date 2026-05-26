@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qPC - кастомні збірки ПК</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mades.css">
+    <link rel="stylesheet" href="./css/whyme.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/backtotop-down.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/carouselqpc.css">
+    <link rel="stylesheet" href="./css/home-redesign.css">
+</head>
+<body>
+    <button id="scrollBtn" class="scroll-action" aria-label="Прокрутити сторінку">
+    <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
+</button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">q<span>PC</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Відкрити меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./projects.html">Збірки</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./comparison.html">Порівняння</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link btn-contact" href="tel:+380937977117">Зв'язатися</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <section class="hero-section">
+            <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/carousel-first-item.jpg" class="d-block w-100" alt="Білий ігровий ПК з підсвіткою">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/carousel-second-item.jpg" class="d-block w-100" alt="Сучасна збірка персонального комп'ютера">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/carousel-third-item.jpg" class="d-block w-100" alt="Комп'ютерні комплектуючі у корпусі">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <p class="eyebrow">Кастомні ПК під ваші задачі</p>
+                <h1>qPC</h1>
+                <p class="hero-copy">Збираємо охайні, продуктивні та чесно підібрані комп'ютери для ігор, навчання, роботи з графікою і стримінгу.</p>
+                <div class="hero-actions">
+                    <a class="primary-action" href="./projects.html">Дивитися збірки</a>
+                    <a class="secondary-action" href="tel:+380937977117">Консультація</a>
+                </div>
+                <div class="hero-stats" aria-label="Переваги qPC">
+                    <span><strong>100+</strong> готових ПК</span>
+                    <span><strong>24/7</strong> підтримка</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-builds" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <p class="eyebrow">Популярні конфігурації</p>
+                <h2 id="featured-title">Три стилі. Один рівень якості.</h2>
+            </div>
+
+            <div id="qpcCarousel" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="carousel-container-qpc">
+                            <div class="carousel-slide-qpc">
+                                <div class="info-card-qpc">
+                                    <span class="build-label">4K / Ultra</span>
+                                    <h2>Arctic Storm</h2>
+                                    <p>Флагманська біла збірка на базі RTX 4090 та Core i9 для 4K-геймінгу, монтажу і важких робочих задач.</p>
+                                    <a class="btn-more-qpc" href="./pages/projects-pc-cards/arctic-storm/arctic-storm.html">Детальніше</a>
+                                    <div class="custom-nav-qpc">
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev" aria-label="Попередня збірка"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next" aria-label="Наступна збірка"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="image-section-qpc">
+                                    <img src="./image/PC1.png" alt="Arctic Storm">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="carousel-container-qpc">
+                            <div class="carousel-slide-qpc">
+                                <div class="info-card-qpc">
+                                    <span class="build-label">Full HD / Pro</span>
+                                    <h2>Eclipse</h2>
+                                    <p>Стримана чорна збірка з RTX 3060, Core i5 та 16 ГБ DDR4 для стабільної гри, навчання і щоденної роботи.</p>
+                                    <a class="btn-more-qpc" href="./pages/projects-pc-cards/eclipse/eclipse.html">Детальніше</a>
+                                    <div class="custom-nav-qpc">
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev" aria-label="Попередня збірка"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next" aria-label="Наступна збірка"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="image-section-qpc">
+                                    <img src="./image/PC2.png" alt="Eclipse">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="carousel-container-qpc">
+                            <div class="carousel-slide-qpc">
+                                <div class="info-card-qpc">
+                                    <span class="build-label">Start / Gaming</span>
+                                    <h2>Spirit</h2>
+                                    <p>Збалансований старт у світ геймінгу з GTX 1660 Super, охайним корпусом і запасом для майбутніх апгрейдів.</p>
+                                    <a class="btn-more-qpc" href="./pages/projects-pc-cards/spirit/spirit.html">Детальніше</a>
+                                    <div class="custom-nav-qpc">
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev" aria-label="Попередня збірка"><i class="fa-solid fa-chevron-left"></i></button>
+                                        <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next" aria-label="Наступна збірка"><i class="fa-solid fa-chevron-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="image-section-qpc">
+                                    <img src="./image/PC3.png" alt="Spirit">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" aria-labelledby="projects-title">
+            <div class="projects-header">
+                <div class="header-text">
+                    <p class="eyebrow">Портфоліо</p>
+                    <h2 id="projects-title">Виконані проєкти</h2>
+                    <a href="./pages/projects-list-cards-page/projects-arctic.html">Гранд-проєкт Arctic</a>
+                </div>
+                <div class="header-text">
+                    <a href="./projects.html">Усі проєкти</a>
+                </div>
+            </div>
+
+            <div class="slider-container" id="slider">
+                <article class="project-card">
+                    <a href="./pages/projects-pc-cards/glacier.html" class="project-card-link">
+                        <div class="img-wrapper orange-bg">
+                            <img src="./image/PC-carousel.png" alt="Проєкт Glacier">
+                        </div>
+                        <div class="card-content">
+                            <h3>Glacier</h3>
+                            <span class="project-more">Відкрити</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <a href="./pages/projects-pc-cards/arctic-minimalist/arctic-minimalist.html" class="project-card-link">
+                        <div class="img-wrapper green-bg">
+                            <img src="./image/PC-carousel2.png" alt="Проєкт Arctic Minimalist">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arctic Minimalist</h3>
+                            <span class="project-more">Відкрити</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="project-card">
+                    <a href="./pages/projects-pc-cards/blizzard/blizzard.html" class="project-card-link">
+                        <div class="img-wrapper">
+                            <img src="./image/PC-carousel3.png" alt="Проєкт Blizzard">
+                        </div>
+                        <div class="card-content">
+                            <h3>Blizzard</h3>
+                            <span class="project-more">Відкрити</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="advantages-section" id="advantages" aria-labelledby="advantages-title">
+            <div class="section-heading">
+                <p class="eyebrow">Чому qPC</p>
+                <h2 id="advantages-title">Збірка, яку не соромно показати всередині</h2>
+            </div>
+
+            <div class="advantage-row">
+                <div class="advantage-copy">
+                    <h3>Тільки перевірені бренди</h3>
+                    <p>Ми працюємо з надійними комплектуючими, тестуємо кожну деталь перед встановленням і підбираємо компоненти без слабких місць.</p>
+                </div>
+                <div class="advantage-media">
+                    <img src="./image/wyme.png" alt="Комплектуючі для збірки ПК">
+                </div>
+            </div>
+
+            <div class="advantage-row reverse">
+                <div class="advantage-copy">
+                    <h3>Професійна збірка</h3>
+                    <p>Акуратний кабель-менеджмент, правильний airflow, стрес-тести та налаштування системи перед передачею клієнту.</p>
+                </div>
+                <div class="advantage-media">
+                    <img src="./image/wyme2.png" alt="Готовий персональний комп'ютер">
+                </div>
+            </div>
+
+            <div class="advantage-row">
+                <div class="advantage-copy">
+                    <h3>Чесна ціна та гнучкість</h3>
+                    <p>Ви бачите повну специфікацію, можете змінювати бюджет і легко планувати майбутній апгрейд без зайвих обмежень.</p>
+                </div>
+                <div class="advantage-media">
+                    <img src="./image/wyme3.png" alt="Сучасний ігровий комп'ютер">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="foot-container left-group">
+                <div class="left-section">
+                    <ul class="footer-nav">
+                        <li><a href="#">IT курси у Броварах</a></li>
+                        <li><a href="#">Вчимо: розробник ПЗ, web-дизайнер, кібербезпека, Python.</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="left-section">
+                    <ul class="footer-nav">
+                        <li><a href="#">Наші контакти</a></li>
+                        <li><a href="#">м. Бровари, вул. Симона Петлюри</a></li>
+                        <li><a href="tel:+380937977117">+38 (093) 797-71-17</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-container">
+                <ul class="footer-navigation-golovna">
+                    <li><a href="./index.html">Головна</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scrollanimforgemini.js"></script>
+<script src="./js/backtotop.js"></script>
+</body>
+</html>

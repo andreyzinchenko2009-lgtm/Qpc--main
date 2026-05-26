@@ -1,0 +1,43 @@
+.characteristics-container {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 20px;
+}
+.spec-category {
+            font-family: 'Dela Gothic One', sans-serif;
+            font-size: 1.1rem;
+            color: #55ccff;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+.spec-item {
+    display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 15px;
+        }
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        .spec-label {
+            color: #666666;
+            font-weight: 300;
+        }
+        .spec-value {
+            color: #ffffff;
+            font-weight: 400;
+            text-align: right;
+        }
+        @media (max-width: 768px) {
+            .spec-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+            .spec-value {
+                text-align: left;
+            }
+        }

@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-action {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 1000;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    background: rgba(12, 14, 20, 0.86);
+    color: #fff;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.scroll-action:hover {
+    transform: translateY(-2px);
+    border-color: rgba(155, 255, 61, 0.7);
+    background: rgba(18, 22, 28, 0.94);
+}
+
+.scroll-action i {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 520px) {
+    .scroll-action {
+        right: 16px;
+        bottom: 16px;
+        width: 50px;
+        height: 50px;
+    }
+}
